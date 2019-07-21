@@ -110,6 +110,8 @@ def find_tests(which_tests=None):
     if ok('ebooks'):
         from calibre.ebooks.metadata.rtf import find_tests
         a(find_tests())
+        from calibre.ebooks.pdf.test_html_writer import find_tests
+        a(find_tests())
     if ok('misc'):
         from calibre.ebooks.metadata.tag_mapper import find_tests
         a(find_tests())
